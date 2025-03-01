@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Tap the screen!</h1>
+    <h1>Click The Screen</h1>
+    <audio id="sound" src="New Recording 48.m4a" style="visibility: hidden;"></audio>
     <script>
         document.addEventListener("click", (e) =>
         {
-            alert("you tapped the screen!")
+            document.getElementById("sound").play();
         })
     </script>
 </body>
